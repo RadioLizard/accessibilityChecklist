@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+    <head>
+        <title>Accessibility Checklist</title>
+        <link rel="stylesheet" type="text/css" href="styles/styles.css"/>
+        <link href="https://fonts.googleapis.com/css?family=Nunito|Source+Sans+Pro" rel="stylesheet">    </head>
+    <body>
+        <header>
+            <h1>Accessibility Checklist</h1>
+            <h2>A Basic Checklist for Keeping Your Web Projects Accessible</h2>
+            <button id="hide">Hide Checked Items</button>
+        </header>
+        <main>
+            <div id="one" class="even">
+                <input id='overall-1' name="one" type='checkbox'><label for="overall-1">
+                Do all &lt;html&gt; tags in the project have a "lang" attribute to identify the language used on the page?
+                <br/><br/>
+                <span>(Here's a great link to the <a href="https://www.w3schools.com/tags/ref_language_codes.asp">list of language codes and "lang" attribute usage</a>.)</span> 
+                </label>
+            </div>
+            <div id="two" class="odd">
+                <input id='overall-2' name="two" type='checkbox'><label for="overall-2">
+                Does the project use descriptive tags to organize the page and help assistive tools navigate efficiently?
+                <br/><br/>
+                <span>(These descriptive tags include &lt;header&gt; &lt;footer&gt; &lt;main&gt; &lt;nav&gt; &lt;article&gt; and &lt;section&gt;.)</span> 
+                </label>
+            </div>
+            <div id="three" class="even">
+                <input id='overall-3' name="three" type='checkbox'><label for="overall-3">
+                Are all specific times and dates in the project wrapped in a &lt;time&gt; tag?
+                <br/><br/>
+                <span>(Does that tag have the "datetime" attribute that standardizes the date in a "yyyy-mm-dd" format?)</span> 
+                </label>
+            </div>
+            <div id="four" class="odd">
+                <input id='design-1' name="four" type='checkbox'><label for="design-1">
+                Does all of the text in the project stand out against the background so it is clear and easily legible?
+                <br/><br/>
+                <span>(The recommended minimum ratio between two stacked elements is 4.5 to 1. Here's a link to a <a href="https://webaim.org/resources/contrastchecker/">color comparer</a>.)</span> 
+                </label>
+            </div>
+            <div id="five" class="even">
+                <input id='design-2' name="five" type='checkbox'><label for="design-2">
+                Is the font choice for the primary content on the page sufficiently legible?
+                <br/><br/>
+                <span>(Decorative fonts can be hard to read for elements with smaller text or users with smaller screens.)</span> 
+                </label>
+            </div>
+            <div id="six" class="odd">
+                <input id='design-3' name="six" type='checkbox'><label for="design-3">
+                Has the content been tested using a colorblindness tool to make sure that all important information and primary content is viewable to those who experience color blindness?
+                <br/><br/>
+                <span>(Here's a <a href="https://chrome.google.com/webstore/detail/i-want-to-see-like-the-co/jebeedfnielkcjlcokhiobodkjjpbjia?hl=en-GB">chrome extension</a> that can apply a colorblind filter to the page.)</span> 
+                </label>
+            </div>
+            <div id="seven" class="even">
+                <input id='design-4' name="seven" type='checkbox'><label for="design-4">
+                If there is any flashing content, is it flashing at a rate of three times per second or less?
+                <br/><br/>
+                <span>(Rapidly flashing lights are not only an accessibility issue, but also a health issue for some users.)</span> 
+                </label>
+            </div>
+            <div id="eight" class="odd">
+                <input id='text-1' name="eight" type='checkbox'><label for="text-1">
+                Do the &lt;h&gt; tags have the correct heirarchical importance? 
+                <br/><br/>
+                <span>(That is to say, is &lt;h1&gt; the most important thing followed by &lt;h2&gt; and so on without skipping any numbers?)</span> 
+                </label>
+            </div>
+            <div id="nine" class="even">
+                <input id='img-1' name="nine" type='checkbox'><label for="img-1">
+                Do all &lt;img&gt; tags have a text description or "alt" attribute describing the image?
+                <br/><br/>
+                <span>(If the image has an explanation someplace besides the "alt" attribute, is the "alt" attribute still present, but left empty?)</span> 
+                </label>
+            </div>
+            <div id="ten" class="odd">
+                <input id='img-2' name="ten" type='checkbox'><label for="img-2">
+                Does the page include &lt;figcaption&gt; tags alongside the &lt;img&gt; tags?
+                <br/><br/>
+                <span>(Are there &lt;figure&gt; tags around the image and caption, binding the two together?)</span> 
+                </label>
+            </div>
+            <div id="eleven" class="even">
+                <input id='img-3' name="eleven" type='checkbox'><label for="img-3">
+                Do all audio elements on the page have descriptive &lt;audio&gt; tags around them?
+                <br/><br/>
+                <span>(Is the "controls" attribute included so standard controls are enabled?)</span> 
+                </label>
+            </div>
+            <div id="twelve" class="odd">
+                <input id='img-4' name="twelve" type='checkbox'><label for="img-4">
+                Does every video on the page have captioning available?
+                <br/><br/>
+                <span>(Alternatively, is there a link to the transcript or the transcript itself on the page?)</span> 
+                </label>
+            </div>
+            <div id="thirteen" class="even">
+                <input id='form-1' name="thirteen" type='checkbox'><label for="form-1">
+                Does the page have &lt;label&gt; tags for form options and input descriptions? 
+                <br/><br/>
+                <span>(Do those labels have the "for" attribute linking them to the correct options or inputs?)</span> 
+                </label>
+            </div>
+            <div id="fourteen" class="odd">
+                <input id='form-2' name="fourteen" type='checkbox'><label for="form-2">
+                Are sets of radio options wrapped in &lt;fieldset&gt; tags?
+                <br/><br/>
+                <span>(And is there a &lt;legend&gt; tag to house the description of the question or option set?)</span> 
+                </label>
+            </div>
+            <div id="fifteen" class="even">
+                <input id='form-3' name="fifteen" type='checkbox'><label for="form-3">
+               Do all &lt;input&gt; tags have the "type" attribute describing what kind of input it is?
+                <br/><br/>
+                <span>(Here's a <a href="https://www.w3schools.com/tags/att_input_type.asp">list of input "types" and their usage</a>.)</span> 
+                </label>
+            </div>
+            <div id="sixteen" class="odd">
+                <input id='form-4' name="sixteen" type='checkbox'><label for="form-4">
+                Do all important interactive elements on the page such as links and form elements have the "accesskey" attribute to help keyboard-only users navigate the page?
+                <br/><br/>
+                <span>(Similarly, do elements use the "tabindex" attribute if tabbing through the elements on the page doesn't take the user through the logical order of items?)</span> 
+                </label>
+            </div>
+            <div id="seventeen" class="even">
+                <input id='form-5' name="seventeen" type='checkbox'><label for="form-5">
+                Does the page clearly alert the user if an error has been made on an input?
+                <br/><br/>
+                <span>(Does it suggest fixes for those errors?)</span> 
+                </label>
+            </div>
+        </main>
+        <footer>
+            <div>
+                <p>The information on this checklist was compiled using the following sources which were not linked to above:</p>
+                <ul>
+                    <li><a href="https://learn.freecodecamp.org/responsive-web-design/applied-accessibility">The Free Code Camp accessibility section</a></li>
+                    <li><a href="https://www.wuhcag.com/wcag-checklist/ ">The Wuhcag accessibility guidelines</a></li>
+                    <li>And of course the <a href="https://www.w3.org/standards/techs/wcag#w3c_all">Web Content Accessibility Guidelines (WCAG)</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script src="./scripts/bundle.js"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+
+body{
+    background-color: #31343a;
+    color: white;
+    font-size: 1.2em;
+    font-family: 'Nunito', sans-serif;
+    font-weight:350;
+}
+h1{
+    font-size: 1.6em;
+    width: 100%;
+}
+h2{
+    font-size: 1.4em;
+    width: 80%;
+}
+div{
+    padding: 1.5%;
+    margin:auto;
+    align-content: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 2%;
+    width: 90%;
+}
+
+header{
+    padding-left: 5%;
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 100%;
+}
+
+.even{
+    background-color: #0b7677;
+}
+
+.odd{
+    background-color: #11a1a3;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: black;
+    background-color: #67fcff;
+}
+
+span{
+    font-style: italic;
+}
+
+button{
+     background-color: #0b7677;
+     color: white;
+     border: none;
+     border-bottom: 5px solid #67fcff;
+     font-family: 'Nunito', sans-serif;
+    padding: 1%;
+    font-size: .8em;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
